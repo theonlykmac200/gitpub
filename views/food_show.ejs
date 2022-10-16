@@ -15,15 +15,17 @@
             body {
               color: blanchedalmond;
               background-color: steelblue;
+              text-transform: capitalize;
+              margin: auto;
             }
           </style>
     </head>
     <body>
         <h1> At foo bar</h1>
 
-        <h2><%= drinks.name %></h2>
-        <img src="<%=drinks.image%>.png"/>
-        <h3>$<%= drinks.price %></h3>
-        <a href = "/drinks">Back to Full Drink Menu</a>
+        <h2><%= food.name %></h2>
+        <img src="<%=food.image%>.png"/>
+        <h3>$<%= food.price %></h3>
+        <a href = "/food/">Back to Full Food Menu</a>
     </body>
 </html>

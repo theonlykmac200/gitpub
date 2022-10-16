@@ -19,11 +19,14 @@
           </style>
     </head>
     <body>
-        <h1> At foo bar</h1>
-
-        <h2><%= drinks.name %></h2>
-        <img src="<%=drinks.image%>.png"/>
-        <h3>$<%= drinks.price %></h3>
-        <a href = "/drinks">Back to Full Drink Menu</a>
+       <h1> Welcome to gitPub</h1>
+        <ul>
+            <% for(let i = 0; i < allFood.length; i++) { %>
+            <li>
+                <a href="/food/<%=i %>"><%= allFood[i].name %></a>
+            </li>
+            <% } %>
+            
+        </ul>
     </body>
 </html>
