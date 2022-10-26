@@ -4,10 +4,13 @@ const food = require("./models/food")
 
 const app = express()
 
-
+//since you have a home route, why not link the user to /drinks and /food in /
 
 app.get("/", (req, res) => {
-    res.send("Welcome to the Gitpub App!")
+    res.send(`Welcome to the Gitpub App!
+    <button><a href='/drinks'>DRINKS</a></button>
+    <button><a href='/food'>FOOD</a></button>
+    `)
 } )
 
 app.get("/drinks", (req, res) => {

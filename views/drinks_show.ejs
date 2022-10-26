@@ -22,7 +22,9 @@
         <h1> At foo bar</h1>
 
         <h2><%= drinks.name %></h2>
-        <img src="<%=drinks.image%>.png"/>
+        <!-- below doesn't work, fixed below -->
+        <!-- <img src="<%=drinks.image%>.png"/> -->
+        <img src="<%=drinks.image.slice(0,-3)+"png"%>" alt="image"> 
         <h3>$<%= drinks.price %></h3>
         <a href = "/drinks">Back to Full Drink Menu</a>
     </body>
